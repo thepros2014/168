@@ -1,0 +1,4 @@
+ecdsa
+qrcode  # optional, for QR export
+# pygame is optional for gamepad support
+pytest
