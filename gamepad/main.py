@@ -140,8 +140,27 @@ def init_gamepad():
     return pygame, joystick
 
 
-def gamepad_interactive_loop(simulate=False):
+def detect_gamepad_available() -> bool:
+    """Return True if a gamepad is available; false otherwise. Does not raise on ImportError."""
+    try:
+        import pygame
+    except Exception:
+        return False
+    try:
+        pygame.init()
+        pygame.joystick.init()
+        count = pygame.joystick.get_count()
+        return count > 0
+    except Exception:
+        return False
+
+
+def gamepad_interactive_loop(simulate=None):
     """Interactive loop. If simulate=True, use keyboard-driven mode instead of real gamepad."""
+    # If simulate is None, auto-detect presence of a gamepad
+    if simulate is None:
+        simulate = not detect_gamepad_available()
+
     if simulate:
         print('Simulated gamepad mode. Press:')
         print('  0 -> Generate a seed phrase')

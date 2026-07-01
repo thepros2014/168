@@ -38,15 +38,15 @@ def menu():
         if choice == '1':
             run_script(TOOLS[0][1], ['seed'])
         elif choice == '2':
-            sim = input('Simulate? (y/N): ').strip().lower() == 'y'
+            sim_in = input('Simulate? (y=simulate, enter=auto): ').strip().lower()
             args = ['gamepad']
-            if sim:
+            if sim_in == 'y':
                 args.append('--simulate')
             run_script(TOOLS[1][1], args)
         elif choice == '3':
-            sim = input('Simulate? (y/N): ').strip().lower() == 'y'
+            sim_in = input('Simulate? (y=simulate, enter=auto): ').strip().lower()
             args = ['gamepad']
-            if sim:
+            if sim_in == 'y':
                 args.append('--simulate')
             run_script(TOOLS[2][1], args)
         elif choice == '4':
