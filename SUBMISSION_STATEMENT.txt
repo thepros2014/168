@@ -1,0 +1,26 @@
+Submission Statement for Monero Bounty CLI Prototype
+
+Repository: https://github.com/thepros2014/168
+Pull request: https://github.com/thepros2014/168/pull/1
+
+GUID: 60806696-b296-454b-a837-d9a8430219d3
+Zip file: submission-60806696-b296-454b-a837-d9a8430219d3.zip
+SHA256: 5ffcfe99e9dfd808c88ac54e3505a9e092ebfe2b1235e4052dbc8d049e6f6944
+
+Author: Raymond Thomas (thepros2014)
+Date: 2026-07-01T06:23:55Z
+
+Contents
+- Python CLI-only and gamepad-enabled Monero seed generator tools
+- BIP-39 compliant wordlist and seed derivation
+- Optional `qrcode` fallback and optional `pygame` gamepad support
+- Launcher menu for CLI / gamepad / gamepad tool selection
+- Smoke tests and pytest coverage for core flows
+- CI configuration for automated testing
+
+Verification
+- `pytest -q` passes: 2 passed
+- `python scripts/smoke_test.py` passes
+- Submission pack zip SHA256 matches manifest above
+
+This submission includes a release asset attached to GitHub release `submission-60806696`.
