@@ -1,0 +1,42 @@
+Title: Submission for bounty #168 — Gamepad-controlled cryptographic multitool
+
+Body:
+
+Hello,
+
+I’m submitting my completed work for bounty #168.
+
+Deliverables
+- `168/GUI/` — GUI-ready copy of the tool
+- `168/original/` — original CLI-only copy for easy selection
+- `main.py` — core tool with:
+  - seed phrase generation
+  - secp256k1 private/public key derivation
+  - prototype Bitcoin P2PKH address generation
+  - optional QR export (`qrcode`)
+  - optional gamepad control mode (`pygame`)
+  - text ↔ binary conversion helpers
+- `README.md` — usage instructions
+- `requirements.txt` — dependency guidance
+- `wordlist.txt` — built-in wordlist
+
+How to test
+From either folder:
+
+```bash
+python main.py seed
+python main.py derive --seed "your twelve word seed"
+python main.py derive --seed "your twelve word seed" --out-qr public.png
+python main.py encode --mode text-to-binary --text "hello"
+python main.py encode --mode binary-to-text --binary "01101000 01100101 01101100 01101100 01101111"
+python main.py gamepad
+```
+
+Note: `pygame` is optional and only required for `gamepad` mode. `qrcode` is optional for QR export.
+
+Payment address
+849A99aVAncayW3SvKaBmpKPkf8AE66hq3HCjpGaXPQ1BD4PMeanPwu8TUpP4Zxpds6KGNVasGNoe9Va6JPgnEwqPZAwTra
+
+If you prefer, I can also provide a unique payment address for this submission.
+
+Thanks, and I look forward to your review.
