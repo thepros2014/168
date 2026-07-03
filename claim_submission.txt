@@ -34,8 +34,8 @@ python main.py gamepad
 
 Note: `pygame` is optional and only required for `gamepad` mode. `qrcode` is optional for QR export.
 
-Payment address
-849A99aVAncayW3SvKaBmpKPkf8AE66hq3HCjpGaXPQ1BD4PMeanPwu8TUpP4Zxpds6KGNVasGNoe9Va6JPgnEwqPZAwTra
+Payment address Monero
+4AedS3fohD4T8nwQ92vFqHhkRwC3ej3sZbvspHYYAywvPtLx5vxvCfE65hxbSRhhiuHyZhYDHhfyAKtcVywzdBfDPFNqcc9
 
 If you prefer, I can also provide a unique payment address for this submission.
 
